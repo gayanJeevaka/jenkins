@@ -10,16 +10,17 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class JenkinsApplicationTests {
 
+    Logger log = LoggerFactory.getLogger(this.getClass());
     @Test
     void contextLoads() {
-        Logger log = LoggerFactory.getLogger(this.getClass());
+
         log.info("Welcome to jenkins build");
         Assertions.assertEquals(true, true);
     }
 
     @Test
     void contextLoad2() {
-        Logger log = LoggerFactory.getLogger(this.getClass());
+
         log.info("Welcome to jenkins new commit");
         Assertions.assertEquals(true, true);
     }
